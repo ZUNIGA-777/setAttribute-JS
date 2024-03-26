@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: purple;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallpaper {
+    width: min(calc(75vw - 20px), 500px);
+    border-radius: 10px;
+}
+
+.container-btn {
+    display: flex;
+}
+
+.btn {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border: none;
+    width: min(max(200px, 30%), 400px);
+    border-radius: 5px;
+    box-shadow: #FFF -1px 1px, #FFF -2px 2px, #FFF -3px 3px, #FFF -4px 4px;
+    font-weight: 800;
+    font-size: min(max(9px, 3vw), 12px);
+    cursor: pointer;
+}
+
+#btn-back {
+    margin-right: 25px;
+}
+
+.btn:active {
+    transform: translateY(-3px);
+}
+
